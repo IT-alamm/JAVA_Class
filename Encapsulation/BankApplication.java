@@ -13,6 +13,7 @@ class BankAccount {
         this.accountNumber = accountNumber;
         this.balance = initialBalance;
     }
+   
 
     // Deposit method
     public void deposit(double amount) {
@@ -48,7 +49,7 @@ public class BankApplication {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Create customer account
+        
         System.out.print("Enter Customer Name: ");
         String name = sc.nextLine();
         System.out.print("Enter Account Number: ");
@@ -57,6 +58,7 @@ public class BankApplication {
         double balance = sc.nextDouble();
 
         BankAccount account = new BankAccount(name, accNo, balance);
+       
 
         int choice;
         do {
